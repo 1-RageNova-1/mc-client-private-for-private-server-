@@ -1,72 +1,398 @@
-[11:02:09] [Client thread/ERROR]: Can't find the resource index file: C:\Users\RageNova\AppData\Roaming\.minecraft\assets\indexes\1.8.json
-[11:02:09] [Client thread/INFO]: Setting user: Player
-[11:02:09] [Client thread/INFO]: (Session ID is token:0:0)
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.attack:key.mouse.left
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.use:key.mouse.right
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.forward:key.keyboard.up
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.left:key.keyboard.left
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.back:key.keyboard.down
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.right:key.keyboard.right
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.jump:key.keyboard.space
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.sneak:key.keyboard.right.control
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.sprint:key.keyboard.keypad.1
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.drop:key.keyboard.q
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.inventory:key.keyboard.e
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.chat:key.keyboard.t
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.playerlist:key.keyboard.tab
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.pickItem:key.mouse.middle
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.command:key.keyboard.slash
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.screenshot:key.keyboard.f2
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.togglePerspective:key.keyboard.f5
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.smoothCamera:key.keyboard.o
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.fullscreen:key.keyboard.f11
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.spectatorOutlines:key.keyboard.unknown
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.1:key.keyboard.1
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.2:key.keyboard.2
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.3:key.keyboard.3
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.4:key.keyboard.4
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.5:key.keyboard.5
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.6:key.keyboard.6
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.7:key.keyboard.7
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.8:key.keyboard.8
-[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.9:key.keyboard.9
-[11:02:10] [Client thread/INFO]: LWJGL Version: 3.3.3-snapshot
-[11:02:12] [Client thread/INFO]: Reloading ResourceManager: Default
-[11:02:12] [Client thread/ERROR]: Couldn't initialize twitch stream
-[11:02:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:02:12] [Thread-4/INFO]: Initializing LWJGL OpenAL
-[11:02:12] [Thread-4/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:02:13] [Thread-4/INFO]: OpenAL initialized.
-[11:02:13] [Sound Library Loader/INFO]: Sound engine started
-[11:02:13] [Client thread/INFO]: Created: 512x512 textures-atlas
-[11:02:18] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:02:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:02:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:02:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:02:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:02:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:02:35] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:02:55] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:03:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:03:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:03:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:04:01] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:04:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:04:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:04:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:04:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:04:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:04:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:04:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:04:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:04:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:04:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
-[11:05:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:05:23] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:05:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:06:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:06:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:06:51] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:07:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:07:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
-[11:07:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[12:43:14] [Client thread/ERROR]: Can't find the resource index file: C:\Users\RageNova\AppData\Roaming\.minecraft\assets\indexes\1.8.json
+[12:43:14] [Client thread/INFO]: Setting user: Player
+[12:43:14] [Client thread/INFO]: (Session ID is token:0:0)
+[12:43:15] [Client thread/INFO]: LWJGL Version: 3.3.3-snapshot
+[12:43:16] [Client thread/INFO]: Reloading ResourceManager: Default
+[12:43:16] [Client thread/ERROR]: Couldn't initialize twitch stream
+[12:43:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:43:16] [Thread-4/INFO]: Initializing LWJGL OpenAL
+[12:43:16] [Thread-4/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:43:16] [Thread-4/INFO]: OpenAL initialized.
+[12:43:17] [Sound Library Loader/INFO]: Sound engine started
+[12:43:17] [Client thread/INFO]: Created: 512x512 textures-atlas
+[12:43:18] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[12:43:22] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[12:43:22] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[12:43:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[12:43:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[12:43:28] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[12:43:28] [Server thread/INFO]: Generating keypair
+[12:43:28] [Server thread/INFO]: Preparing start region for level 0
+[12:43:29] [Server thread/INFO]: Changing view distance to 16, from 10
+[12:43:29] [Server thread/INFO]: Maicka_[local:E:7107bc71] logged in with entity id 389 at (-132.84385801627752, 67.0, 203.4518939885243)
+[12:43:29] [Server thread/INFO]: Maicka_ joined the game
+[12:43:33] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:43:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:43:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:43:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.game.creative
+[12:43:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:43:57] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:03] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:44:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:44:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:44:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:44:17] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:44:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:44:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:44:21] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:44:23] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:44:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:44:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim
+[12:44:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.gravel
+[12:44:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:44:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:random.pop
+[12:44:28] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:liquid.water
+[12:44:28] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim
+[12:44:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:30] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:30] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:30] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:31] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:31] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:32] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:32] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:44:33] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:44:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:35] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:35] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:35] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:47] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:50] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:44:50] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim
+[12:44:50] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.neutral.swim.splash
+[12:44:53] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:random.pop
+[12:44:54] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:54] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:44:57] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:random.pop
+[12:45:03] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:03] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:03] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:05] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Server thread/ERROR]: "Silently" catching entity tracking error.
+net.minecraft.util.ReportedException: Adding entity to track
+	at net.minecraft.entity.EntityTracker.addEntityToTracker(EntityTracker.java:223) [maiclient-1.8.9.jar:?]
+	at net.minecraft.entity.EntityTracker.trackEntity(EntityTracker.java:118) [maiclient-1.8.9.jar:?]
+	at net.minecraft.world.WorldManager.onEntityAdded(WorldManager.java:29) [maiclient-1.8.9.jar:?]
+	at net.minecraft.world.World.onEntityAdded(World.java:1069) [maiclient-1.8.9.jar:?]
+	at net.minecraft.world.WorldServer.onEntityAdded(WorldServer.java:899) [maiclient-1.8.9.jar:?]
+	at net.minecraft.world.World.loadEntities(World.java:2955) [maiclient-1.8.9.jar:?]
+	at net.minecraft.world.chunk.Chunk.onChunkLoad(Chunk.java:913) [maiclient-1.8.9.jar:?]
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:117) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.<init>(PlayerManager.java:329) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.management.PlayerManager.getPlayerInstance(PlayerManager.java:94) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.management.PlayerManager.updateMountedMovingPlayer(PlayerManager.java:237) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.management.ServerConfigurationManager.serverUpdateMountedMovingPlayer(ServerConfigurationManager.java:303) [maiclient-1.8.9.jar:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayer(NetHandlerPlayServer.java:409) [maiclient-1.8.9.jar:?]
+	at net.minecraft.network.play.client.C03PacketPlayer.processPacket(C03PacketPlayer.java:34) [maiclient-1.8.9.jar:?]
+	at net.minecraft.network.play.client.C03PacketPlayer$C06PacketPlayerPosLook.processPacket(C03PacketPlayer.java:157) [maiclient-1.8.9.jar:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) [maiclient-1.8.9.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330) [?:?]
+	at net.minecraft.util.Util.runTask(Util.java:22) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:665) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:612) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:173) [maiclient-1.8.9.jar:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:500) [maiclient-1.8.9.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1516) [?:?]
+Caused by: java.lang.IllegalStateException: Entity is already tracked!
+	at net.minecraft.entity.EntityTracker.addEntityToTracker(EntityTracker.java:190) ~[maiclient-1.8.9.jar:?]
+	... 23 more
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.bat.takeoff
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:45:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim
+[12:45:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:21] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:45:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.gravel
+[12:45:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:27] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:30] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:31] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.grass
+[12:45:32] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:32] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:32] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:32] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:33] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:33] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:33] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.grass
+[12:45:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:dig.gravel
+[12:45:44] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:game.player.swim.splash
+[12:46:01] [Client thread/INFO]: Stopping!
+[12:46:01] [Client thread/INFO]: SoundSystem shutting down...
+[12:46:01] [Server thread/INFO]: Stopping server
+[12:46:01] [Server thread/INFO]: Saving players
+[12:46:01] [Server thread/INFO]: Saving worlds
+[12:46:01] [Server thread/INFO]: Saving chunks for level 'New World1.8.9'/Overworld
+[12:46:01] [Server thread/INFO]: Saving chunks for level 'New World1.8.9'/Nether
+[12:46:01] [Server thread/INFO]: Saving chunks for level 'New World1.8.9'/The End
+[12:46:01] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

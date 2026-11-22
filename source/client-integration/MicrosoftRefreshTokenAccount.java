@@ -125,7 +125,7 @@ extends AccountEntry {
                     return new LoginResult(LoginStatus.FAILED);
                 }
             } else {
-                String msaResponse = MicrosoftAuth.post("https://login.live.com/oauth20_token.srf", "client_id=c4f0db78-5015-4a94-8b34-1a4da87b9ce4&client_secret=<redacted>&refresh_token=" + this.refreshToken + "&grant_type=refresh_token&redirect_uri=http://localhost:" + port, false);
+                String msaResponse = MicrosoftAuth.post("https://login.live.com/oauth20_token.srf", "client_id=eaca69b9-f4d8-4dab-92e0-c1e3f7b962dc&client_secret=<redacted>&refresh_token=" + this.refreshToken + "&grant_type=refresh_token&redirect_uri=http://localhost:" + port, false);
                 if (msaResponse == null) {
                     return new LoginResult(LoginStatus.FAILED);
                 }
@@ -230,7 +230,7 @@ extends AccountEntry {
             return null;
         }
         Logger.log(LogLevel.INFO, true, (running ? "Running" : "Starting") + " HTTP browser server on port {}", port);
-        return "https://login.live.com/oauth20_authorize.srf?client_id=c4f0db78-5015-4a94-8b34-1a4da87b9ce4&client_secret=<redacted>&response_type=code&redirect_uri=http://localhost:" + port + "&scope=XboxLive.signin%20offline_access";
+        return "https://login.live.com/oauth20_authorize.srf?client_id=eaca69b9-f4d8-4dab-92e0-c1e3f7b962dc&client_secret=<redacted>&response_type=code&redirect_uri=http://localhost:" + port + "&scope=XboxLive.signin%20offline_access";
     }
 }
 

@@ -342,15 +342,34 @@ extends AccountEntry {
                 + "&state=" + form(oauthState)
                 + "&prompt=select_account";
 
-            Logger.log(LogLevel.INFO, true, "Microsoft OAuth callback listening on {}", redirectUri);
-            try {
-                if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-                    Desktop.getDesktop().browse(URI.create(authorizeUrl));
-                }
-            } catch (Exception browserError) {
-                Logger.log(LogLevel.WARN, true, "Could not auto-open browser; use copied login URL: {}", browserError.getMessage());
-            }
-            return authorizeUrl;
+            
+Logger.log(LogLevel.INFO, true, "Microsoft OAuth callback listening on {}", redirectUri);
+Logger.log(LogLevel.INFO, true, "MICROSOFT AUTHORIZE URL: {}", authorizeUrl);
+
+boolean browserOpened = false;
+
+try {
+    if (Desktop.isDesktopSupported()
+            && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+        Desktop.getDesktop().browse(URI.create(authorizeUrl));
+        browserOpened = true;
+    }
+} catch (Exception browserError) {
+    Logger.log(LogLevel.WARN, true,
+        "Desktop browser launch failed: {}", browserError.getMessage());
+}
+
+if (!browserOpened) {
+    try {
+        new ProcessBuilder("cmd", "/c", "start", "", authorizeUrl).start();
+    } catch (Exception browserError) {
+        Logger.log(LogLevel.ERROR, true,
+            "Could not open Microsoft login URL: {}", browserError.getMessage());
+    }
+}
+
+return authorizeUrl;
+
         } catch (Exception e) {
             stopServer();
             Logger.log(LogLevel.ERROR, true, "Unable to start Microsoft browser login: {}", e);
