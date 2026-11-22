@@ -1,0 +1,72 @@
+[11:02:09] [Client thread/ERROR]: Can't find the resource index file: C:\Users\RageNova\AppData\Roaming\.minecraft\assets\indexes\1.8.json
+[11:02:09] [Client thread/INFO]: Setting user: Player
+[11:02:09] [Client thread/INFO]: (Session ID is token:0:0)
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.attack:key.mouse.left
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.use:key.mouse.right
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.forward:key.keyboard.up
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.left:key.keyboard.left
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.back:key.keyboard.down
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.right:key.keyboard.right
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.jump:key.keyboard.space
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.sneak:key.keyboard.right.control
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.sprint:key.keyboard.keypad.1
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.drop:key.keyboard.q
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.inventory:key.keyboard.e
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.chat:key.keyboard.t
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.playerlist:key.keyboard.tab
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.pickItem:key.mouse.middle
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.command:key.keyboard.slash
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.screenshot:key.keyboard.f2
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.togglePerspective:key.keyboard.f5
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.smoothCamera:key.keyboard.o
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.fullscreen:key.keyboard.f11
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.spectatorOutlines:key.keyboard.unknown
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.1:key.keyboard.1
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.2:key.keyboard.2
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.3:key.keyboard.3
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.4:key.keyboard.4
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.5:key.keyboard.5
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.6:key.keyboard.6
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.7:key.keyboard.7
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.8:key.keyboard.8
+[11:02:09] [Client thread/WARN]: Skipping bad option: key_key.hotbar.9:key.keyboard.9
+[11:02:10] [Client thread/INFO]: LWJGL Version: 3.3.3-snapshot
+[11:02:12] [Client thread/INFO]: Reloading ResourceManager: Default
+[11:02:12] [Client thread/ERROR]: Couldn't initialize twitch stream
+[11:02:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:02:12] [Thread-4/INFO]: Initializing LWJGL OpenAL
+[11:02:12] [Thread-4/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:02:13] [Thread-4/INFO]: OpenAL initialized.
+[11:02:13] [Sound Library Loader/INFO]: Sound engine started
+[11:02:13] [Client thread/INFO]: Created: 512x512 textures-atlas
+[11:02:18] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:02:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:02:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:02:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:02:25] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:02:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:02:35] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:02:55] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:03:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:03:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:03:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:04:01] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:04:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:04:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:04:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:04:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:04:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:04:34] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:04:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:04:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:04:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:04:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[11:05:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:05:23] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:05:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:06:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:06:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:06:51] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:07:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:07:08] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[11:07:10] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu

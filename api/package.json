@@ -1,0 +1,24 @@
+{
+  "name": "maiclient-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MaiClient backend API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:standalone": "node src/standalone.js",
+    "test:core": "node scripts/test-core.js",
+    "validate-env": "node scripts/validate-env.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.21.2",
+    "helmet": "7.2.0",
+    "jsonwebtoken": "9.0.2",
+    "morgan": "1.10.0",
+    "pg": "8.13.1",
+    "uuid": "10.0.0"
+  }
+}
