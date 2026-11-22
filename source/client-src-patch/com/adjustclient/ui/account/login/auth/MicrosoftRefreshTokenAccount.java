@@ -29,13 +29,6 @@ import com.adjustclient.ui.hud.notification.NotificationBuilder;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandler;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
-import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.nio.NioServerSocketChannel;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
@@ -45,11 +38,23 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
-import java.net.SocketAddress;
 import java.net.URI;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.SecureRandom;
+import java.util.Base64;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Consumer;
+import java.awt.Desktop;
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpServer;
 import net.minecraft.util.Session;
 import com.maiclient.api.MaiClientApi;
 import com.maiclient.api.MaiClientConfig;
@@ -59,11 +64,13 @@ import org.apache.commons.io.IOUtils;
 
 public final class MicrosoftRefreshTokenAccount
 extends AccountEntry {
-    private static NioEventLoopGroup bossGroup;
-    private static NioEventLoopGroup workerGroup;
+    private static HttpServer browserServer;
     static Consumer<String> refreshTokenCallback;
     static int port;
-    private static final String CLIENT_SECRET = "<redacted>";
+    private static String codeVerifier;
+    private static String oauthState;
+    private static String redirectUri;
+    private static final String CLIENT_ID = "eaca69b9-f4d8-4dab-92e0-c1e3f7b962dc";
     private boolean notBrowser;
     private String refreshToken;
     private Object field76;
@@ -76,16 +83,17 @@ extends AccountEntry {
     public MicrosoftRefreshTokenAccount() {
     }
 
-    public static void stopServer() {
-        if (bossGroup == null) {
-            return;
+    public static synchronized void stopServer() {
+        if (browserServer != null) {
+            Logger.log(LogLevel.INFO, true, "Ended HTTP browser server running on port {}", port);
+            browserServer.stop(0);
+            browserServer = null;
         }
-        Logger.log(LogLevel.INFO, true, "Ended HTTP browser server running on port {}", port);
-        bossGroup.shutdownGracefully();
-        workerGroup.shutdownGracefully();
-        bossGroup = null;
-        workerGroup = null;
         refreshTokenCallback = null;
+        codeVerifier = null;
+        oauthState = null;
+        redirectUri = null;
+        port = 0;
     }
 
     @Override
@@ -127,7 +135,12 @@ extends AccountEntry {
                     return new LoginResult(LoginStatus.FAILED);
                 }
             } else {
-                String msaResponse = MicrosoftAuth.post("https://login.live.com/oauth20_token.srf", "client_id=c4f0db78-5015-4a94-8b34-1a4da87b9ce4&client_secret=<redacted>&refresh_token=" + this.refreshToken + "&grant_type=refresh_token&redirect_uri=http://localhost:" + port, false);
+                String msaResponse = postForm(
+                    "https://login.microsoftonline.com/consumers/oauth2/v2.0/token",
+                    "client_id=" + form(CLIENT_ID)
+                        + "&refresh_token=" + form(this.refreshToken)
+                        + "&grant_type=refresh_token"
+                        + "&scope=" + form("XboxLive.signin offline_access"));
                 if (msaResponse == null) {
                     return new LoginResult(LoginStatus.FAILED);
                 }
@@ -210,31 +223,145 @@ extends AccountEntry {
         return bytes.toByteArray();
     }
 
-    public static String startServer(Consumer<String> callback) {
-        boolean running;
-        boolean bl = running = bossGroup != null && workerGroup != null;
-        if (!running) {
-            try {
-                refreshTokenCallback = callback;
-                bossGroup = new NioEventLoopGroup();
-                workerGroup = new NioEventLoopGroup();
-                ServerBootstrap bootstrap = new ServerBootstrap();
-                ((ServerBootstrap)((ServerBootstrap)bootstrap.group((EventLoopGroup)bossGroup, (EventLoopGroup)workerGroup).channel(NioServerSocketChannel.class)).option(ChannelOption.SO_BACKLOG, Integer.valueOf(128))).childOption(ChannelOption.SO_KEEPALIVE, Boolean.TRUE).childHandler((ChannelHandler)new BrowserLoginChannelInitializer());
-                Channel channel = bootstrap.bind((SocketAddress)new InetSocketAddress(0)).sync().channel();
-                port = ((InetSocketAddress)channel.localAddress()).getPort();
-            }
-            catch (Exception e) {
-                MicrosoftRefreshTokenAccount.stopServer();
-                Logger.log(LogLevel.ERROR, true, "Unable to start HTTP browser server: {}", e);
-                Logger.debugStackTrace(e, null);
-                new NotificationBuilder("Browser Account").format("Unable to start HTTP server: {}", e).show();
-            }
+    private static String form(String value) {
+        return URLEncoder.encode(value, StandardCharsets.UTF_8);
+    }
+
+    private static String postForm(String endpoint, String body) throws IOException {
+        HttpURLConnection connection = (HttpURLConnection) URI.create(endpoint).toURL().openConnection();
+        connection.setRequestMethod("POST");
+        connection.setDoOutput(true);
+        connection.setConnectTimeout(10000);
+        connection.setReadTimeout(15000);
+        connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+        connection.setRequestProperty("Accept", "application/json");
+        connection.getOutputStream().write(body.getBytes(StandardCharsets.UTF_8));
+        int status = connection.getResponseCode();
+        InputStream stream = status >= 200 && status < 300 ? connection.getInputStream() : connection.getErrorStream();
+        String response = stream == null ? "" : IOUtils.toString(stream, StandardCharsets.UTF_8);
+        connection.disconnect();
+        if (status < 200 || status >= 300) {
+            throw new IOException("Microsoft token endpoint returned HTTP " + status + ": " + response);
         }
-        if (port < 1) {
+        return response;
+    }
+
+    private static String randomUrlToken(int bytes) {
+        byte[] value = new byte[bytes];
+        new SecureRandom().nextBytes(value);
+        return Base64.getUrlEncoder().withoutPadding().encodeToString(value);
+    }
+
+    private static String pkceChallenge(String verifier) throws Exception {
+        byte[] digest = MessageDigest.getInstance("SHA-256").digest(verifier.getBytes(StandardCharsets.US_ASCII));
+        return Base64.getUrlEncoder().withoutPadding().encodeToString(digest);
+    }
+
+    private static Map<String, String> parseQuery(String query) {
+        Map<String, String> values = new HashMap<>();
+        if (query == null || query.isEmpty()) return values;
+        for (String pair : query.split("&")) {
+            int equals = pair.indexOf('=');
+            String key = equals < 0 ? pair : pair.substring(0, equals);
+            String value = equals < 0 ? "" : pair.substring(equals + 1);
+            values.put(URLDecoder.decode(key, StandardCharsets.UTF_8),
+                URLDecoder.decode(value, StandardCharsets.UTF_8));
+        }
+        return values;
+    }
+
+    private static void handleBrowserCallback(HttpExchange exchange) throws IOException {
+        String response = "Microsoft sign-in did not complete. You can close this tab and retry in MaiClient.";
+        int status = 400;
+        try {
+            Map<String, String> query = parseQuery(exchange.getRequestURI().getRawQuery());
+            String error = query.get("error");
+            if (error != null) {
+                throw new IOException("Microsoft sign-in error: " + error + " " + query.get("error_description"));
+            }
+            String code = query.get("code");
+            String state = query.get("state");
+            if (code == null || !oauthState.equals(state)) {
+                throw new IOException("Missing authorization code or invalid OAuth state.");
+            }
+            String tokenJson = postForm(
+                "https://login.microsoftonline.com/consumers/oauth2/v2.0/token",
+                "client_id=" + form(CLIENT_ID)
+                    + "&grant_type=authorization_code"
+                    + "&code=" + form(code)
+                    + "&redirect_uri=" + form(redirectUri)
+                    + "&code_verifier=" + form(codeVerifier)
+                    + "&scope=" + form("XboxLive.signin offline_access"));
+            JsonObject tokens = JsonParser.parseString(tokenJson).getAsJsonObject();
+            if (!tokens.has("refresh_token")) {
+                throw new IOException("Microsoft did not return a refresh token.");
+            }
+            String refreshToken = tokens.get("refresh_token").getAsString();
+            Consumer<String> callback = refreshTokenCallback;
+            if (callback == null) throw new IOException("Login callback is no longer active.");
+            callback.accept(refreshToken);
+            response = "Microsoft sign-in completed. Return to MaiClient.";
+            status = 200;
+            Logger.log(LogLevel.INFO, true, "Microsoft browser sign-in completed.");
+        } catch (Exception e) {
+            Logger.log(LogLevel.ERROR, true, "Microsoft browser sign-in failed: {}", e.getMessage());
+            response = "Microsoft sign-in failed: " + (e.getMessage() == null ? "unknown error" : e.getMessage())
+                + ". Return to MaiClient and retry.";
+        } finally {
+            byte[] bytes = ("<!doctype html><html><head><meta charset=\"utf-8\"><title>MaiClient sign-in</title></head><body><h2>"
+                + response + "</h2></body></html>").getBytes(StandardCharsets.UTF_8);
+            exchange.getResponseHeaders().set("Content-Type", "text/html; charset=UTF-8");
+            exchange.sendResponseHeaders(status, bytes.length);
+            exchange.getResponseBody().write(bytes);
+            exchange.close();
+            stopServer();
+        }
+    }
+
+    public static synchronized String startServer(Consumer<String> callback) {
+        try {
+            if (browserServer != null) stopServer();
+            refreshTokenCallback = callback;
+            codeVerifier = randomUrlToken(32);
+            oauthState = randomUrlToken(24);
+            browserServer = HttpServer.create(new InetSocketAddress("127.0.0.1", 0), 0);
+            port = browserServer.getAddress().getPort();
+            redirectUri = "http://localhost:" + port;
+            browserServer.createContext("/", MicrosoftRefreshTokenAccount::handleBrowserCallback);
+            browserServer.setExecutor(java.util.concurrent.Executors.newSingleThreadExecutor(r -> {
+                Thread thread = new Thread(r, "MaiClient-Microsoft-OAuth");
+                thread.setDaemon(true);
+                return thread;
+            }));
+            browserServer.start();
+
+            String authorizeUrl = "https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize"
+                + "?client_id=" + form(CLIENT_ID)
+                + "&response_type=code"
+                + "&redirect_uri=" + form(redirectUri)
+                + "&response_mode=query"
+                + "&scope=" + form("XboxLive.signin offline_access")
+                + "&code_challenge=" + form(pkceChallenge(codeVerifier))
+                + "&code_challenge_method=S256"
+                + "&state=" + form(oauthState)
+                + "&prompt=select_account";
+
+            Logger.log(LogLevel.INFO, true, "Microsoft OAuth callback listening on {}", redirectUri);
+            try {
+                if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                    Desktop.getDesktop().browse(URI.create(authorizeUrl));
+                }
+            } catch (Exception browserError) {
+                Logger.log(LogLevel.WARN, true, "Could not auto-open browser; use copied login URL: {}", browserError.getMessage());
+            }
+            return authorizeUrl;
+        } catch (Exception e) {
+            stopServer();
+            Logger.log(LogLevel.ERROR, true, "Unable to start Microsoft browser login: {}", e);
+            Logger.debugStackTrace(e, null);
+            new NotificationBuilder("Browser Account").format("Unable to start Microsoft login: {}", e).show();
             return null;
         }
-        Logger.log(LogLevel.INFO, true, (running ? "Running" : "Starting") + " HTTP browser server on port {}", port);
-        return "https://login.live.com/oauth20_authorize.srf?client_id=c4f0db78-5015-4a94-8b34-1a4da87b9ce4&client_secret=<redacted>&response_type=code&redirect_uri=http://localhost:" + port + "&scope=XboxLive.signin%20offline_access";
     }
 }
 
