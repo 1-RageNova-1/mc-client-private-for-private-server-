@@ -45,7 +45,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
 import java.util.Base64;
@@ -324,7 +323,7 @@ extends AccountEntry {
             refreshTokenCallback = callback;
             codeVerifier = randomUrlToken(32);
             oauthState = randomUrlToken(24);
-            browserServer = HttpServer.create(new InetSocketAddress("127.0.0.1", 0), 0);
+            browserServer = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
             port = browserServer.getAddress().getPort();
             redirectUri = "http://localhost:" + port;
             browserServer.createContext("/", MicrosoftRefreshTokenAccount::handleBrowserCallback);
